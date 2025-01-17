@@ -7,13 +7,23 @@
     height: 99vh;
     background-image:url(assets/images/bg.png);
     background-size: cover;
-    filter: brightness(0.3);
+    /* filter: brightness(0.3); */
     position: absolute;
     top: 0;
     z-index: -1;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
+    background-position-x: center;
 }
+.main .boxx{
+    width: max(1000px,100vw);
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.779);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 .nav {
     /* border: 2px solid red;  */
     height: 10vh;
@@ -137,4 +147,12 @@ text-align: center;
     font-size: 1.5em;
     margin-top: 10px;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.blwcontent{
+    border: 2px solid red;
+    width: 95vw;
+    height: 80vh;
+    position: absolute;
+    top: 100%;
+   
 }
