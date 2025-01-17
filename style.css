@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(assets/images/bg.png);
+    background-size: cover;
+    filter: brightness(0.3);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.nav {
+    border: 2px solid red; 
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    gap: 50px;
+    margin: 10px;
+    
+}
+.nav .logo{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+.nav .logo img{
+width: 10em;
+filter: brightness(1);
+padding-right: 10em;
+
+}
+.cntr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.cntr select{
+    background-color: rgba(0, 0, 0, 0);
+    width: 7em;
+    height: 2.3em;
+    border-radius: 3px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 20px;
+    }
+.cntr button{
+    width: 60px;
+    height: 25px;
+    background-color: red;
+    fill: red;
+    color: white;
+    border: 1px;
+    border-radius: 3px;
+}
