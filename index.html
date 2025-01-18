@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix-HomePAge</title>
+    <title>Netflix-Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="main">
-    <div class="boxx">  <div class="nav">
-        <div class="logo">
-            <img src="assets/images/image.png" alt="">
-        </div>
-        <div class="cntr">
-            <select name="lang" id="lang">
-                <option value="Hindi"> <img src="assets/images/lang.svg" alt="">Hindi</option>
-                <option value="English">English</option>
-            </select>
-            <button>Search</button>
+    <div class="main">
+        <div class="box"></div>
+        <div class="nav">
+            <div class="logo">
+                <img src="assets/images/image.png" alt="">
+            </div>
+            <div class="button">
+                <select name="lang" id="lang">
+                    <Option>English</Option>
+                    <option value="">Hindi</option>
+                </select>
+                <button>Sign In</button>
+            </div>
         </div>
         <div class="content">
-            <div class="msg"><h1>Unlimited Movies,<br>TV shows and more</h1>
-            <h3>Starts at RS149.Cancel any Time.</h3> 
-            </div>
+            <span class="cnt1">Unlimited Movies,TV shows and more</span>
+            <span>Starts at ₹ 149.Cancel any time</span>
+            <span class="cnt3">Ready To watch?Enter your Email to create or restart your membership.</span>
             <div class="mail">
-                <label for="mail">Ready To watch?Enter your email to create or restart your membership.</label>
-                <div class="container">
-                    <div class="box"><input type="email" id="mail" placeholder="Email address"></div>
-                  <button>Get Started > </button>
-                </div>
+                <input type="email" placeholder="Email address">
+                <button>Get Started  ></button>
             </div>
         </div>
+        <div class="border">
+            <div class="curvborder">Trending Now</div>
+            <div class="before"></div>
+        </div>
     </div>
-   </div>
-   <div class="blwcontent"></div>
+
+
+
+    <!-- main section ends here -->
+    <div class="gap">Trending Now</div>
 </body>
 </html>

@@ -1,158 +1,161 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+:root{
+    /* overflow-x: hidden; */
 }
 .main{
-    width: max(1000px,100vw);
-    height: 99vh;
-    background-image:url(assets/images/bg.png);
+    width: max(1200px,100vw);
+    height: 750px;
+    background-image: url(assets/images/bg.png);
+    background-position: center center;
     background-size: cover;
-    /* filter: brightness(0.3); */
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    object-fit: cover;
-    object-position: center center;
-    background-position-x: center;
-}
-.main .boxx{
-    width: max(1000px,100vw);
-    height: 99vh;
-    background-color: rgba(0, 0, 0, 0.779);
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
-.nav {
-    /* border: 2px solid red;  */
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
     position: relative;
-    z-index: 1;
-    gap: 50px;
-    margin: 10px;
-    
 }
-.nav .logo{
-display: flex;
-justify-content: flex-start;
-align-items: center;
-padding-left: 8em;
-
+.main .box{
+    width: max(1200px,100vw);
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.697);
 }
-.nav .logo img{
-width: 8.8em;
-color: rgb(229, 9, 20);
-filter: brightness(0.9);
-filter: grayscale(0.2);
-
-}
-.cntr{
+.nav{
+    position: absolute;
+    top: 0%;
+    z-index: 10;
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    padding-right: 8em;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
-.cntr select{
-    background-color: rgba(0, 0, 0, 0.559);
-    width: 8em;
-    height: 2.5em;
-    border-radius: 3px;
+.nav .logo img{
+    width: 9em;
+    padding-left: 7.9em;
+    filter: grayscale(0.2);
+}
+.button{
+    display: flex;
+    gap: 15px;
+    padding-right: 8.5em
+}
+.button select{
+    width:8em;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.685);
     color: white;
-    font-weight: bolder;
-    padding-left: 10px;
-    padding-right: 20px;
-    }
-.cntr button{
-    width: 7.7em;
-    height: 2.5em;
-    background: rgb(229, 9, 20);
-    fill: red;
+    border-radius: 5px;
+}
+.button button{
+    width:6em;
+    height: 32px;
+    background-color:rgb(229, 9, 20);
     color: white;
     border: 1px;
-    border-radius: 3px;
-    font-size: 13px;
-    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 .content{
-    position: absolute;
-    top: 150%;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    box-sizing: border-box;
+    width: 40vw;
+    height: 548px;
     /* border: 2px solid red; */
-    width: 45vw;
-    height: 80vh;
-    margin: 10px auto;
+    position: absolute;
+    top: 140px;
+    left: 500px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    gap: 15px;
+    /* color: white; */
+    margin-bottom: 10px;
+}
+.content .cnt1{
+    color: white;
+    font-weight: bold;
+    font-size: 3.9em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.content>:nth-child(2){
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+.content>:nth-child(3){
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.mail{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mail input{
+    width: 18vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.701);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family:'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
     
 }
-.content .msg{
-color: white;
-text-align: center;
-}
-.content .msg h1{
-    font-size: 3.5em;
-    font-weight: 850;
-}
-.content .msg h3{
-    padding: 10px;
-    font-size: 1.3em;
-    font-weight: 500;
-}
-
-.content .mail{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+button{
+    width:12vw ;
+    height: 7.9vh;
+    background:rgb(229, 9, 20) ;
     color: white;
-    text-align: center;
-    padding-top: 20px;
-}
-.content .container{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-.box input{
-    border: 2px solid red;
-    width:22vw;
-    height: 8vh;
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.736);
-    border-radius: 5px;
-    padding-left: 13px;
-    font-size: 1.1em;
-    font-weight: 400;
-    color: white;
-    margin-top: 10px;
-}
-.container button{
-    min-width:14vw ;
-    height: 8vh;
-    background: rgb(229, 9, 20);
-    color: rgb(249, 249, 249);
-    padding: 5px;
-    text-align: center;
-    font-weight: 600;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
     border: 1px;
     border-radius: 5px;
-    font-size: 1.5em;
-    margin-top: 10px;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    padding: 5px;
+    cursor: pointer;
 }
-.blwcontent{
-    border: 2px solid red;
-    width: 95vw;
-    height: 80vh;
+.border{
+    box-sizing: border-box;
+    position: relative;
+    /* overflow-x: hidden; */
+    width: max(1200px,100vw);
+    height: 65px;
+    z-index: 20;
+    bottom:50px
+}
+.border .curvborder{
+    overflow-x: hidden;
+    width: max(1200px,100vw);
+    height: 65px;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
     position: absolute;
-    top: 100%;
-   
+    top: 5px;
+    border-top-left-radius: 50% 80%;
+    border-top-right-radius: 50% 80%;
 }
+.before{
+    content: '';
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    z-index: -1;
+    border-top-left-radius: 50% 80%;
+    border-top-right-radius: 50% 80%;
+
+}
+.gap{
+    width: 100vw;
+    height: 5vh;
+}
+
+
