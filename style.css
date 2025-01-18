@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: black;
+}
 :root{
     /* overflow-x: hidden; */
 }
@@ -154,8 +157,51 @@ button{
 
 }
 .gap{
-    width: 100vw;
-    height: 5vh;
+ /* border: 2px solid red; */
+    width: max(1200px,100vw);
+    height: 8vh;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: end;
+}
+.gap p{
+    border: 2px solid red;
+    width: 80vw;
+    margin: 0px auto;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.newcontent{
+    border: 2px solid red; 
+    width: max(1200px,100vw);
+    min-height: 80vh;
+    background-color: black;
+}
+.newcontent .select{
+    width: 80vw;
+    margin: 10px auto;
+    display: flex;
+    gap: 25px;
+    padding-left: 30px;
+    
+}
+.select select{
+    width: 6.9em;
+    height: 2.7em;
+    background: rgb(36, 34, 34);
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
 }
 
 
