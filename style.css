@@ -6,7 +6,7 @@ body{
     background-color: black;
 }
 :root{
-    /* overflow-x: hidden; */
+    overflow-x: hidden; 
 }
 .main{
     width: max(1200px,100vw);
@@ -169,7 +169,7 @@ button{
     align-items: end;
 }
 .gap p{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 80vw;
     margin: 0px auto;
     color: white;
@@ -180,9 +180,9 @@ button{
     font-family: 'Poppins', sans-serif;
 }
 .newcontent{
-    border: 2px solid red; 
+    /* border: 2px solid red;  */
     width: max(1200px,100vw);
-    min-height: 80vh;
+    min-height: 100vh;
     background-color: black;
 }
 .newcontent .select{
@@ -202,6 +202,47 @@ button{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
+}
+.movies{
+    width: 80vw;
+    margin: 20px auto;
+    display: flex;
+    gap: 40px;
+}
+.movies img{
+  height: 35vh;
+  border-radius: 5px;
+  transform: scaleX(1);
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+}
+.movies img:hover{
+    transform: scale(1.1);
+}
+.reason{
+    width: 80vw;
+    margin: 60px auto;
+}
+.reason p{
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.reason .boxes{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+.reason .boxes .box{
+    /* border: 2px solid red; */
+    width: 50vw;
+    height: 250px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 15px;
 }
 
 
