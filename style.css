@@ -9,7 +9,7 @@ body{
     /* overflow-x: hidden;  */
 }
 .main{
-    width: max(1200px,100vw);
+    width: 100vw;
     height: 750px;
     background-image: url(assets/images/bg.png);
     background-position: center center;
@@ -17,7 +17,7 @@ body{
     position: relative;
 }
 .main .box{
-    width: max(1200px,100vw);
+    width: 100vw;
     height: 750px;
     background-color: rgba(0, 0, 0, 0.697);
 }
@@ -75,6 +75,78 @@ body{
     /* color: white; */
     margin-bottom: 10px;
 }
+@media only screen and (max-width:800px){
+    .main{
+        width: 100vw;
+        background-position: center center;
+        background-size: cover;
+    }
+    .content{
+       left: 250px;
+    }
+    .mail button{
+        width: 12vw;
+        font-size: 1em;
+    }
+    .border{
+        width: 100vw;
+    }
+    .reason .boxes{
+        flex-direction: column;
+    }
+    .mail2 .email button{
+        font-size: 1em;
+    }
+    .movies{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (min-width:800px){
+    .main{
+        width:1200px;
+    }
+    .main .box{
+        width: 1200px;
+    }
+    .content{
+        left:500px
+    }
+    .nav{
+        width: 1200px;
+    }
+    .border {
+        width: 1200px;
+    }
+    .curvborder{
+        width:147vw;
+
+    }
+    .border .before{
+        width: 1200px;
+    }
+}
+@media only screen and (max-width:450px){
+    .main{
+        width:1200px
+    }
+    .main .box{
+        width: 1200px;
+    }
+    .nav{
+        justify-content: start;
+        width: 1200px;
+        gap: 30px;
+    }
+    .nav .logo img{
+        width: 7em;
+        padding-left: 5em;
+
+    }
+    .nav .logo .button {
+       margin-left: 40px;
+    }
+
+}
 .content .cnt1{
     color: white;
     font-weight: bold;
@@ -128,15 +200,15 @@ button{
     box-sizing: border-box;
     position: relative;
     /* overflow-x: hidden; */
-    width: max(1200px,100vw);
+    width: 100vw;
     height: 65px;
     z-index: 20;
     bottom:45px;
 }
 .border .curvborder{
     box-sizing: border-box;
-    overflow-x: hidden;
-    width: max(1200px,100vw);
+    /* overflow-x: hidden; */
+    width: 100vw;
     height: 65px;
     background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
     background-clip: padding-box;
@@ -160,7 +232,7 @@ button{
 }
 .gap{
  /* border: 2px solid red; */
-    width: max(1200px,100vw);
+    width: 100vw;
     height: 8vh;
     background-color: black;
     color: white;
@@ -183,7 +255,7 @@ button{
 }
 .newcontent{
     /* border: 2px solid red;  */
-    width: max(1200px,100vw);
+    width: 100vw;
     min-height: 100vh;
     background-color: black;
 }
@@ -238,11 +310,6 @@ button{
     margin-top: 10px;
     display: flex;
     gap: 20px;
-}
-@media only screen and (max-width:800px){
-    .reason .boxes{
-        flex-direction: column;
-    }
 }
 .reason .boxes .box{
     /* border: 2px solid red; */
@@ -311,20 +378,127 @@ button{
     gap: 10px;
 }
 .container .box{
+    box-sizing: border-box;
     width: 80vw;
     height: 12vh;
     background-color: rgb(45, 45, 45);
     color: rgb(255, 255, 255);
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
 
+}
+.container .box:hover{
+    /* cursor: pointer; */
+    background-color: rgb(78, 71, 71);;
 }
 .container .box p{
     padding: 30px;
     font-weight: 500;
     font-size: 1.5em;
 }
+.box .plus{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    width: 2vw;
+    height: 2vw;
+    font-size: 3em;
+    padding: 10px;
+    transform: rotate(0deg);
+    transition: transform,1s,ease-in-out,0.3s;
+    margin-right: 8px;
+}
+.box .plus:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.mail2{
+    /* border: 2px solid red; */
+    width: 80vw;
+    margin: 0px auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mail2 p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.mail2 .email{
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.mail2 .email input{
+    width: 35vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.701);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family:'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+}
+.footer{
+    /* border: 2px solid red; */
+    width: 80vw;
+    margin: 10px auto;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer p{
+    margin-top: 65px;
+    color: rgb(189, 186, 186);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.footer .container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+}
+.footer .container .boxe{
+    padding-left: 5px;
+    list-style: none;
+}
+.boxe ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    gap: 15px;
+}
+li a{
+    color: rgb(189, 186, 186);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+.cnt select{
+    margin-top: 50px;
+    width: 7em;
+    height: 2em;
+    background: rgb(36, 34, 34);
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+.net p{
+    margin-top: 35px;
+}
+
 
 
 
