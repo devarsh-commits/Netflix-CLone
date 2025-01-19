@@ -6,7 +6,7 @@ body{
     background-color: black;
 }
 :root{
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 .main{
     width: max(1200px,100vw);
@@ -131,15 +131,17 @@ button{
     width: max(1200px,100vw);
     height: 65px;
     z-index: 20;
-    bottom:50px
+    bottom:45px;
 }
 .border .curvborder{
+    box-sizing: border-box;
     overflow-x: hidden;
     width: max(1200px,100vw);
     height: 65px;
     background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    background-clip: padding-box;
     position: absolute;
-    top: 5px;
+    top: 4px;
     border-top-left-radius: 50% 80%;
     border-top-right-radius: 50% 80%;
 }
@@ -237,12 +239,92 @@ button{
     display: flex;
     gap: 20px;
 }
+@media only screen and (max-width:800px){
+    .reason .boxes{
+        flex-direction: column;
+    }
+}
 .reason .boxes .box{
     /* border: 2px solid red; */
-    width: 50vw;
+    padding-top: 10px;
+    box-sizing: border-box;
+    width: 80vw;
     height: 250px;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+.box> :nth-child(1){
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    min-height: 8vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    padding-left: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 10px auto;
+}
+.box> :nth-child(2){
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    color: rgba(255, 255, 255, 0.7);;
+    font-size: 1.em;
+    font-weight: 500;
+    font-family:  'Poppins', sans-serif;
+  
+}
+.box>:nth-child(3){
+    box-sizing: border-box;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.ques{
+    width: 80vw;
+    margin: 10px auto;
+}
+.ques p{
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.ques .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .box{
+    width: 80vw;
+    height: 12vh;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container .box p{
+    padding: 30px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
 
 
