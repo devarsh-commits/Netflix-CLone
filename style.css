@@ -6,10 +6,10 @@ body{
     background-color: black;
 }
 :root{
-    /* overflow-x: hidden;  */
+     overflow-x: hidden;  
 }
 .main{
-    width: 100vw;
+    width: max(100vw,1000px);
     height: 750px;
     background-image: url(assets/images/bg.png);
     background-position: center center;
@@ -100,13 +100,13 @@ body{
     .movies{
         overflow-x: hidden;
     }
-}
-@media only screen and (min-width:800px){
+ }
+/* @media only screen and (min-width:800px){
     .main{
-        width:1200px;
+        width:100vw;
     }
     .main .box{
-        width: 1200px;
+        width: 100vw;
     }
     .content{
         left:500px
@@ -124,7 +124,7 @@ body{
     .border .before{
         width: 1200px;
     }
-}
+}  */
 @media only screen and (max-width:450px){
     .main{
         width:1200px
@@ -138,13 +138,61 @@ body{
         gap: 30px;
     }
     .nav .logo img{
-        width: 7em;
-        padding-left: 5em;
+        width: 6em;
+        padding-left: 1em;
 
     }
-    .nav .logo .button {
-       margin-left: 40px;
+    .button select{
+        width:5em;
+        height: 28px;
+        background-color: rgba(0, 0, 0, 0.685);
+        color: white;
+        border-radius: 5px;
     }
+    .nav .button{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        overflow-x: hiddener
+    }
+    .nav button{
+        width:5em;
+        height: 28px;
+        background-color:rgb(229, 9, 20);
+        color: white;
+        border: 1px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+   
+    }
+    .content{
+        box-sizing: border-box;
+        width: 62vw;
+        height: 548px;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 50px;
+        left: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        /* color: white; */
+        margin-bottom: 10px;
+        font-size: 0.6em;
+    }
+    .content>:nth-child(2){
+        white-space: nowrap;
+        font-size: 3em;
+        
+    }
+    .content>:nth-child(3){
+        /* white-space: nowrap; */
+        font-size:12px;
+    }
+
 
 }
 .content .cnt1{
